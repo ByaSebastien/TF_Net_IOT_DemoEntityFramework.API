@@ -12,6 +12,8 @@ namespace TF_Net_IOT_DemoEntityFramework.DAL.Configs
             builder.Property(r => r.Id).ValueGeneratedOnAdd();
             builder.HasIndex(r => r.Name).IsUnique();
             builder.Property(r => r.Name).IsRequired().HasMaxLength(50);
+
+            builder.HasMany(r => r.Users).WithMany(u => u.Roles);
         }
     }
 }

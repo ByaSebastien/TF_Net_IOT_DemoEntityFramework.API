@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TF_Net_IOT_DemoEntityFramework.DAL.Entities
 {
-    internal class OrderLine
+    public class OrderLine
     {
+        public int Id { get; set; }
+        public int Quantity { get; set; }
+        public Product Product { get; set; } = null!;
+        public Order Order { get; set; } = null!;
     }
 }

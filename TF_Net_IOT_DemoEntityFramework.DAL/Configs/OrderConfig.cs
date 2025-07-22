@@ -17,6 +17,9 @@ namespace TF_Net_IOT_DemoEntityFramework.DAL.Configs
             builder.Property(o => o.Id).ValueGeneratedOnAdd();
             builder.Property(o => o.Date).IsRequired().HasColumnType("datetime2");
             builder.Property(o => o.Discount).IsRequired().HasDefaultValue(0);
+
+            builder.HasOne(o => o.User).WithMany(u => u.Orders);
+            builder.HasMany(o => o.OrderLines).WithOne(ol => ol.Order).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

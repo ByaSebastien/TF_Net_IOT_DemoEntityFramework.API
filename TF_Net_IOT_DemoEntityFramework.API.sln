@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF_Net_IOT_DemoEntityFramework.API", "TF_Net_IOT_DemoEntityFramework.API\TF_Net_IOT_DemoEntityFramework.API.csproj", "{4FDAB581-2412-4714-BD19-398082B9FB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF_Net_IOT_DemoEntityFramework.BLL", "TF_Net_IOT_DemoEntityFramework.BLL\TF_Net_IOT_DemoEntityFramework.BLL.csproj", "{CD910240-D24A-49BA-87D8-0642FFD85D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF_Net_IOT_DemoEntityFramework.DAL", "TF_Net_IOT_DemoEntityFramework.DAL\TF_Net_IOT_DemoEntityFramework.DAL.csproj", "{81D6FE76-0A27-4A7C-A87D-FDB5B47C9384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FDAB581-2412-4714-BD19-398082B9FB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDAB581-2412-4714-BD19-398082B9FB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDAB581-2412-4714-BD19-398082B9FB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDAB581-2412-4714-BD19-398082B9FB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD910240-D24A-49BA-87D8-0642FFD85D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD910240-D24A-49BA-87D8-0642FFD85D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD910240-D24A-49BA-87D8-0642FFD85D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD910240-D24A-49BA-87D8-0642FFD85D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D6FE76-0A27-4A7C-A87D-FDB5B47C9384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D6FE76-0A27-4A7C-A87D-FDB5B47C9384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D6FE76-0A27-4A7C-A87D-FDB5B47C9384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D6FE76-0A27-4A7C-A87D-FDB5B47C9384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6903AC2-0DC8-47A2-8D0B-1670FE57D175}
+	EndGlobalSection
+EndGlobal

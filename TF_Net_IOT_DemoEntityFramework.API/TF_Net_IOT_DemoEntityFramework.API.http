@@ -1,0 +1,6 @@
+@TF_Net_IOT_DemoEntityFramework.API_HostAddress = http://localhost:5098
+
+GET {{TF_Net_IOT_DemoEntityFramework.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

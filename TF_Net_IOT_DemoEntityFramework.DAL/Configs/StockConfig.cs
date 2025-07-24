@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
 using TF_Net_IOT_DemoEntityFramework.DAL.Entities;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TF_Net_IOT_DemoEntityFramework.DAL.Configs
 {
@@ -18,6 +15,7 @@ namespace TF_Net_IOT_DemoEntityFramework.DAL.Configs
 
             builder.HasOne(s => s.Product)
             .WithOne(p => p.Stock)
+            .HasForeignKey<Stock>(s => s.ProductId)
                    .OnDelete(DeleteBehavior.Cascade);
         }
     }

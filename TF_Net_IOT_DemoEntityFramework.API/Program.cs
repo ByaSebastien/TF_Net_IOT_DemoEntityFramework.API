@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using TF_Net_IOT_DemoEntityFramework.BLL.Services;
 using TF_Net_IOT_DemoEntityFramework.DAL.Contexts;
+using TF_Net_IOT_DemoEntityFramework.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DbContext,MyAppContext>(o => 
     o.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
+
+builder.Services.AddScoped<ProductRepository>();
+builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 

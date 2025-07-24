@@ -21,8 +21,4 @@
     <ProjectReference Include="..\TF_Net_IOT_DemoEntityFramework.DAL\TF_Net_IOT_DemoEntityFramework.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

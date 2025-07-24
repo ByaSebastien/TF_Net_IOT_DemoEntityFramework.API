@@ -131,7 +131,7 @@ Dans appSettings.json, ajouter votre connection string
 Dans Program.cs, ajouter votre DbContext aux services
 
 ```csharp
-builder.Services.AddDbContext<DbContext,MyAppContext>(o => 
+builder.Services.AddDbContext<DbContext,SchoolContext>(o => 
     o.UseSqlServer(builder.Configuration.GetConnectionString("Main")));
 ```
 

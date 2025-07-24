@@ -65,8 +65,7 @@ public class StudentConfig : IEntityTypeConfiguration<Student>
               .HasMaxLength(100);
     }
 }
-```
-```csharp
+
 public class CourseConfig : IEntityTypeConfiguration<Course>
 {
     public void Configure(EntityTypeBuilder<Course> builder)

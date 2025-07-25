@@ -12,7 +12,8 @@ namespace TF_Net_IOT_DemoEntityFramework.API.Mappers
                 Id = product.Id,
                 Designation = product.Designation,
                 Price = product.Price,
-                AlcoholLevel = product.AlcoholLevel
+                AlcoholLevel = product.AlcoholLevel,
+                CurrentStock = product.Stock is null ? 0 : product.Stock.CurrentQuantity
             };
         }
 
@@ -28,7 +29,7 @@ namespace TF_Net_IOT_DemoEntityFramework.API.Mappers
             };
         }
 
-        public static Product ToProduct(this ProductCreateFormDto form)
+        public static Product ToProduct(this ProductFormDto form)
         {
             return new Product
             {

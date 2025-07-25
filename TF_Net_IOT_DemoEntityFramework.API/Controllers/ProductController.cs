@@ -27,11 +27,33 @@ namespace TF_Net_IOT_DemoEntityFramework.API.Controllers
             return Ok(dtos);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProduct([FromRoute] int id)
+        {
+            Product product = await _productService.GetProduct(id);
+            ProductDetailDto detail = product.ToProductDetail();
+            return Ok(detail);
+        }
+
         [HttpPost]
-        public async Task<IActionResult> Insert([FromBody] ProductCreateFormDto form)
+        public async Task<IActionResult> Insert([FromBody] ProductFormDto form)
         {
             Product created = await _productService.Insert(form.ToProduct());
             return Ok(created.ToProductDetail());
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] ProductFormDto form)
+        {
+            Product updated = await _productService.Update(id, form.ToProduct());
+            return Ok(updated.ToProductDetail());
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            Product deleted = await _productService.Delete(id);
+            return Ok(deleted.ToProductDetail());
         }
     }
 }

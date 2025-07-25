@@ -8,5 +8,6 @@ namespace TF_Net_IOT_DemoEntityFramework.API.Dtos.Products
         public string Designation { get; set; } = null!;
         public int Price { get; set; }
         public int AlcoholLevel { get; set; }
+        public int CurrentStock { get; set; }
     }
 }

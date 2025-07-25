@@ -1,6 +1,6 @@
 ﻿namespace TF_Net_IOT_DemoEntityFramework.API.Dtos.Products
 {
-    public class ProductCreateFormDto
+    public class ProductFormDto
     {
         public string Designation { get; set; } = null!;
         public int Price { get; set; }
